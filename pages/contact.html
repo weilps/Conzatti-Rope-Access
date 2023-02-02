@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Conzatti Rope Access</title>
+    <meta
+      name="description"
+      content="Conzatti Rope Access provides professional and reliable Melbourne and Victoria based rope access services for a wide range of industrial and commercial projects. Contact us for more information."
+    />
+
+    <meta property="og:title" content="Conzatti Rope Access" />
+    <meta property="og:type" content="Industrial Rope Access company " />
+    <meta property="og:url" content="https://conzattiropeaccess.com" />
+    <meta
+      name="og:description"
+      content="Conzatti Rope Access provides professional and reliable Melbourne and Victoria based rope access services for a wide range of industrial and commercial projects. Contact us for more information."
+    />
+    <meta property="og:image" content="./assets/img/logo.png" />
+
+    <!--Font Awesome Library-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Styles perso -->
+    <link rel="stylesheet" href="./../assets/styles/index.css" />
+
+    <link rel="tab icon" href="./../assets/img/logo.png" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-container">
+          <div class="logo">
+            <img src="./../assets/img/logo.png" alt="logo-cra" />
+          </div>
+          <div class="menu">
+            <ul>
+              <li><a href="./../index.html" id="home">Home</a></li>
+              <li><a href="./about.html" id="about">About</a></li>
+              <li>
+                <a href="./services.html" id="services">Services</a>
+              </li>
+              <li><a href="#" id="contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="burger-bun">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div class="socials">
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+      </nav>
+      <div class="title-container">
+        <h2>Contact us</h2>
+      </div>
+    </header>
+    <section class="prompt">
+      <div class="section-container">
+        <h3>
+          Leave your contact details, we will get back to you lightning fast!
+        </h3>
+      </div>
+    </section>
+    <section class="form">
+      <div class="section-container">
+        <form action="./../server/form.php" method="post">
+          <div class="container-form">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" id="name" name="user_name" placeholder="Name" />
+          </div>
+          <div class="container-form">
+            <i class="fa-solid fa-envelope"></i>
+            <input
+              type="email"
+              id="email"
+              name="user_email"
+              placeholder="Email address"
+            />
+          </div>
+          <div class="container-form">
+            <textarea
+              id="message"
+              name="user_message"
+              placeholder="Your message"
+            ></textarea>
+          </div>
+
+          <div class="container-form">
+            <input
+              type="submit"
+              value="Get in touch"
+              class="submit-bt"
+              id="submit-bt1"
+            />
+          </div>
+
+          <!-- <sl-alert
+              variant="success"
+              closable
+              class="alert-closable"
+              id="success-form-alert"
+            >
+              <sl-icon slot="icon" name="check2-circle"></sl-icon>
+              <strong>Your message have been sent successfully</strong><br />
+            </sl-alert>
+            <sl-alert variant="warning" closable class="alert-closable">
+              <sl-icon slot="icon" name="exclamation-triangle"></sl-icon>
+              <strong>Error sending your message</strong><br />
+              Please check all the fields are filled correctly and try again.
+            </sl-alert> -->
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="section-container">
+        <div class="logo">
+          <img src="./../assets/img/logo.png" alt="logo-cra" />
+        </div>
+        <div class="working-hours">
+          <span>Working Hours</span>
+          <p>Monday - Friday</p>
+          <p>7AM - 5PM</p>
+        </div>
+        <div class="socials">
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
