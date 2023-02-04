@@ -1,0 +1,109 @@
+.about {
+  background: $color2;
+  color: $color1;
+  width: 100%;
+  padding: 100px;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  .section-container {
+    position: relative;
+    display: block;
+    width: 50%;
+    margin-left: 35%;
+    min-height: 400px;
+    #img1 {
+      position: absolute;
+      background: url("./../img/mountain-01.jpg") center/cover;
+      transform: translate(-50%, -50%);
+      left: -45%;
+      top: 50%;
+      width: 80%;
+      height: 100%;
+    }
+    h2 {
+      text-transform: uppercase;
+    }
+    p {
+      padding: 50px 0;
+    }
+    a {
+      color: $color1;
+    }
+  }
+}
+
+.bg-vp {
+  //   height: 1200px;
+  //   z-index: 0;
+  #bg1 {
+    background: url(./../img/snow-02b.jpg) center/cover fixed;
+    // background-attachment: scroll;
+    height: 400px;
+    z-index: -1;
+  }
+}
+
+.services {
+  background: $color1;
+  color: $color2;
+  width: 100%;
+  @include center-unique-child;
+  padding: 100px;
+  .section-container {
+    position: relative;
+    display: block;
+    // z-index: -2;
+    p {
+      padding: 50px 0;
+
+      //   z-index: 0;
+    }
+    a {
+      color: $color2;
+
+      //   z-index: 0;
+    }
+    .img {
+      position: absolute;
+    }
+    #img4 {
+      background: url("./../img/rat-bw-01.png") center/cover;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: -60%;
+      //   z-index: -1;
+    }
+  }
+}
+
+.contact {
+  background: url("./../img/city-02.jpg") center/cover;
+  color: $color2;
+  width: 100%;
+  @include center-unique-child;
+  padding: 100px;
+
+  .section-container {
+    background: rgba(255, 255, 255, 0.2);
+    margin: 0 auto 100px 40%;
+    min-height: 350px;
+    display: block;
+    width: 500px;
+    box-shadow: 10px 10px 39px 0px rgba(0, 0, 0, 0.74);
+    border-radius: 25px;
+    backdrop-filter: blur(5px);
+    padding: 50px 0 0;
+    p {
+      padding: 50px 0;
+      font-weight: 500;
+    }
+    a {
+      display: block;
+      margin: 0 auto 50px;
+      width: 150px;
+      color: $color2;
+    }
+  }
+}

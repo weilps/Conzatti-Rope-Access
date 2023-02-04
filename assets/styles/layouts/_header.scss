@@ -1,0 +1,58 @@
+header {
+  min-height: 40vh;
+  background: url(./../img/background-02.jpg) center/cover;
+  width: 100%;
+  z-index: 0;
+  padding-bottom: 5vh;
+  nav {
+    z-index: 10;
+    @include center-unique-child;
+    height: 100px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      .logo {
+        height: 100%;
+        img {
+          height: 100%;
+        }
+      }
+      .menu {
+        width: 400px;
+        ul {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+      .burger-bun {
+        display: none;
+      }
+      .socials {
+        padding-right: 20px;
+        width: 150px;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  .title-container {
+    width: 100%;
+    justify-content: center;
+    h2 {
+      padding: 5vh 8vw 0;
+    }
+    a {
+      display: block;
+      text-align: center;
+      margin: 15vh auto 0;
+      width: 150px;
+    }
+  }
+}

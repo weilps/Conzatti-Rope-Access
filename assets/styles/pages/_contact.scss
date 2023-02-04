@@ -1,7 +1,28 @@
 .form {
+  background: $color2;
+  z-index: 0;
+  position: relative;
+  padding-bottom: 100px;
+  .bg-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: $color3;
+    width: 100%;
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    z-index: 1;
+  }
   .section-container {
-    @include center-unique-child;
+    z-index: 2;
+    display: block;
+    h3 {
+      color: $color1;
+      padding: 100px;
+      margin: 0 auto;
+    }
     form {
+      margin: 0 auto;
       width: 100%;
       max-width: 450px;
       .container-form {
