@@ -1,9 +1,15 @@
 // Get the nav menu and the button
-var nav = document.querySelector('nav');
-var button = document.querySelector('.nav-button');
+const bBButton = document.querySelector(".burger-bun");
+const menu = document.querySelector(".menu");
+const socialsH = document.getElementById("soc-header");
 
+console.log(bBButton);
+console.log(menu);
+console.log(socialsH);
 // Add a click event listener to the button
-button.addEventListener('click', function() {
+bBButton.addEventListener("click", () => {
   // Toggle the 'open' class on the nav menu
-  nav.classList.toggle('open');
+  console.log("CLICK !!");
+  menu.classList.toggle("open");
+  socialsH.classList.toggle("open");
 });

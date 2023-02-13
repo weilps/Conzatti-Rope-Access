@@ -2,6 +2,7 @@ footer {
   width: 100%;
   height: 150px;
   @include center-unique-child;
+  box-shadow: 3px -3px 14px 0px rgba(0, 0, 0, 0.74);
   .section-container {
     width: 100%;
     max-width: 1240px;
@@ -14,6 +15,7 @@ footer {
         display: block;
         margin-bottom: 5px;
         font-size: 1rem;
+        color: $color3-l;
       }
       p {
         font-size: 0.8rem;
@@ -23,12 +25,18 @@ footer {
       display: flex;
       width: 200px;
       justify-content: space-between;
+      @media screen and (max-width: 925px) {
+        display: none;
+      }
     }
     .logo {
       height: 100%;
       width: 300px;
       img {
         height: 100%;
+      }
+      @media screen and (max-width: 420px) {
+        display: none;
       }
     }
   }

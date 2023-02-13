@@ -45,14 +45,59 @@
   .title-container {
     width: 100%;
     justify-content: center;
+    // display: flex;
+    // flex-direction: column;
     h1 {
       padding: 20vh 0 15vh;
+      margin: 0 auto;
+      max-width: 90%;
+    }
+    h3 {
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      color: $color1;
+      backdrop-filter: blur(2px);
+      max-width: 80%;
+    }
+    .bt {
+      display: flex;
+      align-items: center;
+      width: 500px;
+      justify-content: center;
+      margin: 20vh auto 0;
+      @media screen and (max-width: 1440px) {
+        margin: 15vh auto 0;
+      }
+      @media screen and (max-width: 420px) {
+        margin: 15vh auto 0;
+        flex-direction: column;
+      }
     }
     a {
-      display: block;
+      // display: flex;
+      margin: 0;
       text-align: center;
-      margin: 15vh auto 0;
-      width: 150px;
+      font-size: 2rem;
+      width: 300px;
+      @media screen and (max-width: 1440px) {
+        font-size: 1.5rem;
+        width: 250px;
+      }
+      @media screen and (max-width: 420px) {
+        font-size: 1rem;
+        transform: translateX(-30px);
+      }
+    }
+    i {
+      font-size: 2rem;
+      @media screen and (max-width: 1440px) {
+        font-size: 1.5rem;
+      }
+      @media screen and (max-width: 420px) {
+        font-size: 1rem;
+        transform: translateX(-30px);
+      }
     }
   }
 }

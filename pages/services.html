@@ -29,12 +29,23 @@
       referrerpolicy="no-referrer"
     />
 
+    <!-- Shoelace -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0/dist/themes/light.css"
+    />
+
     <!-- Styles perso -->
     <link rel="stylesheet" href="./../assets/styles/index.css" />
 
     <link rel="tab icon" href="./../assets/img/logo.png" />
   </head>
   <body>
+    <div class="bg-rat" id="rat1"></div>
+    <div class="bg-rat" id="rat2"></div>
+    <div class="bg-rat" id="rat3"></div>
+    <div class="bg-rat" id="rat4"></div>
     <header>
       <nav>
         <div class="nav-container">
@@ -43,12 +54,12 @@
           </div>
           <div class="menu">
             <ul>
-              <li><a href="./../index.html" id="home">Home</a></li>
-              <li><a href="./about.html" id="about">About</a></li>
-              <li>
-                <a href="#" id="services">Services</a>
+              <li><a href="./../index.html">Home</a></li>
+              <li><a href="./about.html">About</a></li>
+              <li id="oui">
+                <a href="#">Services</a>
               </li>
-              <li><a href="./contact.html" id="contact">Contact</a></li>
+              <li><a href="./contact.html">Contact</a></li>
             </ul>
           </div>
           <div class="burger-bun">
@@ -65,145 +76,167 @@
         <h2>Services</h2>
       </div>
     </header>
-    <section class="prompt">
-      <div class="section-container">
-        <h6>
-          At Conzatti Rope Access, we are proud to offer a comprehensive range
-          of high-quality rope access services to meet your every need.
-        </h6>
-      </div>
-    </section>
+
     <section class="services">
+      <div class="bg" id="bg-services"></div>
       <div class="section-container">
+        <div class="prompt">
+          <h6>
+            At Conzatti Rope Access, we are proud to offer a comprehensive range
+            of high-quality rope access services to meet your every need.
+          </h6>
+        </div>
         <div class="signature-services">
           <h3>Our Signature Services</h3>
-          <div class="sig-serv">
-            <div class="left">
-              <div class="sig-serv-title">
-                <div class="sig-serv-icon"></div>
-                <h5>Facade remedial</h5>
+          <div class="sig-serv" id="facade-b">
+            <div class="left content">
+              <div class="container">
+                <div class="sig-serv-title">
+                  <div class="sig-serv-icon"></div>
+                  <h5>Facade remedial</h5>
+                </div>
+                <p>
+                  Facade Remedial is our expert service, delivering outstanding
+                  results for all your residential, commercial and industrial
+                  painting needs, including industrial coating and texture
+                  coating
+                </p>
               </div>
-              <p>
-                Facade Remedial is our expert service, delivering outstanding
-                results for all your residential, commercial and industrial
-                painting needs, including industrial coating and texture coating
-              </p>
             </div>
-            <div class="right">
-              <div class="sig-serv-img"></div>
+            <div class="right3">
+              <div class="sig-serv-img" id="facade"></div>
             </div>
           </div>
-          <div class="sig-serv">
+          <div class="sig-serv" id="concrete-b">
             <div class="left">
-              <div class="sig-serv-img"></div>
+              <div class="sig-serv-img" id="concrete"></div>
             </div>
-            <div class="right">
-              <div class="sig-serv-title">
-                <div class="sig-serv-icon"></div>
-                <h5>Concrete works</h5>
+            <div class="right3 content">
+              <div class="container">
+                <div class="sig-serv-title">
+                  <div class="sig-serv-icon"></div>
+                  <h5>Concrete works</h5>
+                </div>
+                <p>
+                  Fix or transform your concrete structures with our expert
+                  Concrete Works services. We will perform all works from any
+                  repairs (concrete, mortar, crack, render) to whole Facade
+                  render.
+                </p>
               </div>
-              <p>
-                Fix or transform your concrete structures with our expert
-                Concrete Works services. We will perform all works from any
-                repairs (concrete, mortar, crack, render) to whole Facade
-                render.
-              </p>
             </div>
           </div>
-          <div class="sig-serv">
-            <div class="left">
-              <div class="sig-serv-title">
-                <div class="sig-serv-icon"></div>
-                <h5>Technical Rigging</h5>
+          <div class="sig-serv" id="technical-b">
+            <div class="left content">
+              <div class="container">
+                <div class="sig-serv-title">
+                  <div class="sig-serv-icon"></div>
+                  <h5>Technical Rigging</h5>
+                </div>
+                <p>
+                  Our expert team at Conzatti Rope Access brings over 10 years
+                  of experience in both urban and geotechnical rigging to your
+                  job site. We guarantee safe and technical rigging solutions
+                  for all your needs, no matter if you need to hoist something
+                  on the roof or access hard-to-reach areas.
+                </p>
               </div>
-              <p>
-                Our expert team at Conzatti Rope Access brings over 10 years of
-                experience in both urban and geotechnical rigging to your job
-                site. We guarantee safe and technical rigging solutions for all
-                your needs, no matter if you need to hoist something on the roof
-                or access hard-to-reach areas.
-              </p>
             </div>
-            <div class="right">
-              <div class="sig-serv-img"></div>
+            <div class="right3">
+              <div class="sig-serv-img" id="technical"></div>
             </div>
           </div>
-          <div class="sig-serv">
+          <div class="sig-serv" id="rescue-b">
             <div class="left">
-              <div class="sig-serv-img"></div>
+              <div class="sig-serv-img" id="standby"></div>
             </div>
-            <div class="right">
-              <div class="sig-serv-title">
-                <div class="sig-serv-icon"></div>
-                <h5>Standby Rescus</h5>
+            <div class="right3 content">
+              <div class="container">
+                <div class="sig-serv-title">
+                  <div class="sig-serv-icon"></div>
+                  <h5>Standby Rescue</h5>
+                </div>
+                <p>
+                  We ensure the safety of our clients and their job sites by
+                  providing trained and equipped personnel ready to respond to
+                  any emergency situation.
+                </p>
               </div>
-              <p>
-                We ensure the safety of our clients and their job sites by
-                providing trained and equipped personnel ready to respond to any
-                emergency situation.
-              </p>
             </div>
           </div>
-          <div class="sig-serv">
-            <div class="left">
-              <div class="sig-serv-title">
-                <div class="sig-serv-icon"></div>
-                <h5>Work at Heights consultant & audit</h5>
+          <div class="sig-serv" id="heights-b">
+            <div class="left content">
+              <div class="container">
+                <div class="sig-serv-title">
+                  <div class="sig-serv-icon"></div>
+                  <h5>Work at Heights consultant & audit</h5>
+                </div>
+                <p>
+                  Our experienced team can provide comprehensive Work at Heights
+                  consulting and auditing services, ensuring that your job is
+                  compliant with all relevant safety regulations and guidelines.
+                  We work closely with our clients to identify potential hazards
+                  and provide recommendations for improvement, to create a safe
+                  and secure environment for everyone.
+                </p>
               </div>
-              <p>
-                Our experienced team can provide comprehensive Work at Heights
-                consulting and auditing services, ensuring that your job is
-                compliant with all relevant safety regulations and guidelines.
-                We work closely with our clients to identify potential hazards
-                and provide recommendations for improvement, to create a safe
-                and secure environment for everyone.
-              </p>
             </div>
-            <div class="right">
-              <div class="sig-serv-img"></div>
+            <div class="right3">
+              <div class="sig-serv-img" id="heights"></div>
             </div>
           </div>
-          <div class="sig-serv">
+          <div class="sig-serv" id="remote-b">
             <div class="left">
-              <div class="sig-serv-img"></div>
+              <div class="sig-serv-img" id="remote"></div>
             </div>
-            <div class="right">
-              <div class="sig-serv-title">
-                <div class="sig-serv-icon"></div>
-                <h5>Remote work</h5>
+            <div class="right3 content">
+              <div class="container">
+                <div class="sig-serv-title">
+                  <div class="sig-serv-icon"></div>
+                  <h5>Remote work</h5>
+                </div>
+                <p>
+                  Our team is equipped to tackle even the most challenging of
+                  projects, no matter where they may be located. Whether you
+                  need work done in a Victorian remote area or interstate, we
+                  have the expertise and resources necessary to get the job done
+                  right.
+                </p>
               </div>
-              <p>
-                Our team is equipped to tackle even the most challenging of
-                projects, no matter where they may be located. Whether you need
-                work done in a Victorian remote area or interstate, we have the
-                expertise and resources necessary to get the job done right.
-              </p>
             </div>
           </div>
-          <div class="sig-serv" id="other-serv">
-            <div class="left">
-              <div class="sig-serv-title">
-                <div class="sig-serv-icon"></div>
-                <h5>Other services</h5>
-              </div>
-              <p>
-                In addition to our signature services, we also offer a wide
-                range of other specialized services to meet your specific needs.
-                Here's a look at some of the other services we provide:
-              </p>
-              <ul>
-                <li>Caulking services</li>
-                <li>Leak detection</li>
-                <li>Cladding & Carpentry</li>
-                <li>Sign Installation & removal</li>
-                <li>Restricted and confined space</li>
-                <li>Netting</li>
-                <li>Window cleaning</li>
-                <li>Industrial abseiling</li>
-                <li>Height Safety systems installation & consultation</li>
-                <li>Building Survey</li>
-                <li>Bird control</li>
-                <li>
+        </div>
+      </div>
+    </section>
+    <section class="other-serv">
+      <div class="sig-serv section-container" id="other-serv">
+        <div class="container-top">
+          <div class="sig-serv-title">
+            <div class="sig-serv-icon"></div>
+            <h5>Other services</h5>
+          </div>
+          <p>
+            In addition to our signature services, we also offer a wide range of
+            other specialized services to meet your specific needs. Here's a
+            look at some of the other services we provide:
+          </p>
+        </div>
+        <div class="container-content">
+          <div class="bg" id="bg-otherserv"></div>
+          <div class="grid">
+            <ul>
+              <li>Caulking services</li>
+              <li>Leak detection</li>
+              <li>Cladding & Carpentry</li>
+              <li>Sign Installation & removal</li>
+              <li>Restricted and confined space</li>
+              <li>Netting</li>
+              <li>Window cleaning</li>
+              <li>Industrial abseiling</li>
+              <li>Height Safety systems installation & consultation</li>
+              <li>Building Survey</li>
+              <li>Bird control</li>
+              <!-- <li>
                   <sl-details
                     summary="Contracting services"
                     class="custom-icons"
@@ -215,13 +248,8 @@
                     companies in the city, providing top-notch service to meet
                     all your requirements.
                   </sl-details>
-                </li>
-                <li></li>
-              </ul>
-            </div>
-            <div class="right">
-              <div class="sig-serv-img"></div>
-            </div>
+                </li> -->
+            </ul>
           </div>
         </div>
       </div>
@@ -239,14 +267,21 @@
           <a href="#"><i class="fa-brands fa-facebook"></i></a>
           <a href="#"><i class="fa-brands fa-instagram"></i></a>
         </div>
+        <div class="working-hours">
+          <span>Phone Us</span>
+          <p>Loic Conzatti</p>
+          <p>0437 803 966</p>
+        </div>
         <div class="logo">
           <img src="./../assets/img/logo.png" alt="logo-cra" />
         </div>
       </div>
     </footer>
+
+    <script src="./../assets/scripts/services.js"></script>
     <script
       type="module"
-      src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0/dist/components/details/details.js"
+      src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0/dist/shoelace.js"
     ></script>
   </body>
 </html>

@@ -29,6 +29,12 @@
       referrerpolicy="no-referrer"
     />
 
+    <!-- Shoelace -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0/dist/themes/light.css"
+    />
+
     <!-- Styles perso -->
     <link rel="stylesheet" href="./assets/styles/index.css" />
 
@@ -43,12 +49,16 @@
           </div>
           <div class="menu">
             <ul>
-              <li><a href="#" id="home">Home</a></li>
-              <li><a href="./pages/about.html" id="about">About</a></li>
+              <li id="oui"><a href="#">Home</a></li>
+              <li>
+                <a href="./pages/about.html" id="about">About</a>
+              </li>
               <li>
                 <a href="./pages/services.html" id="services">Services</a>
               </li>
-              <li><a href="./pages/contact.html" id="contact">Contact</a></li>
+              <li>
+                <a href="./pages/contact.html" id="contact">Contact</a>
+              </li>
             </ul>
           </div>
           <div class="burger-bun">
@@ -64,7 +74,10 @@
       <div class="title-container">
         <h1>Conzatti Rope Access</h1>
         <h3>Technical Access is our trade</h3>
-        <a href="./pages/contact.html" class="button-s1"> Contact Us</a>
+        <div class="bt s3">
+          <a href="./pages/contact.html"> Contact Us</a
+          ><i class="fa-solid fa-arrow-right"></i>
+        </div>
       </div>
     </header>
     <section class="about">
@@ -80,7 +93,10 @@
           than 10 years of experience in urban and geotechnical rope access
           works.
         </p>
-        <a class="button-s2" href="./pages/about.html">Read More</a>
+        <div class="bt s4">
+          <a href="./pages/about.html">Read More</a
+          ><i class="fa-solid fa-arrow-right"></i>
+        </div>
       </div>
     </section>
     <div class="bg-vp">
@@ -88,6 +104,7 @@
     </div>
 
     <section class="services">
+      <div class="bg" id="bg-home-services"></div>
       <div class="section-container">
         <div class="img" id="img4"></div>
         <div class="img" id="img5"></div>
@@ -109,32 +126,59 @@
             <div class="grid-container">
               <div class="grid-content">
                 <div class="icon-rat"></div>
-                <span>Facade remedial</span>
+                <span
+                  ><a href="./pages/services.html#facade-b"
+                    >Facade remedial</a
+                  ></span
+                >
               </div>
               <div class="grid-content">
                 <div class="icon-rat"></div>
-                <span>Concrete works</span>
+                <span
+                  ><a href="./pages/services.html#concrete-b"
+                    >Concrete works</a
+                  ></span
+                >
               </div>
               <div class="grid-content">
                 <div class="icon-rat"></div>
-                <span>Technical Rigging</span>
+                <span
+                  ><a href="./pages/services.html#rigging-b"
+                    >Technical Rigging</a
+                  ></span
+                >
               </div>
               <div class="grid-content">
                 <div class="icon-rat"></div>
-                <span>Standby rescue</span>
+                <span
+                  ><a href="./pages/services.html#rescue-b"
+                    >Standby rescue</a
+                  ></span
+                >
               </div>
               <div class="grid-content">
                 <div class="icon-rat"></div>
-                <span>Work at Heights Consultant & Audit</span>
+                <span
+                  ><a href="./pages/services.html#heights-b"
+                    >Work at Heights Consultant & Audit</a
+                  ></span
+                >
               </div>
               <div class="grid-content">
                 <div class="icon-rat"></div>
-                <span>Remote work</span>
+                <span
+                  ><a href="./pages/services.html#remote-b"
+                    >Remote work</a
+                  ></span
+                >
               </div>
             </div>
           </div>
         </div>
-        <a href="./pages/services.html" class="button-s1">More Services</a>
+        <div class="bt s3">
+          <a href="./pages/services.html">Explore all our services</a
+          ><i class="fa-solid fa-arrow-right"></i>
+        </div>
       </div>
     </section>
     <div class="background" id="bg2"></div>
@@ -145,7 +189,10 @@
           Ready to take your project to the next level? Get in touch with us
           today. Call or email and we will get back to you lightning fast
         </p>
-        <a href="./pages/contact.html" class="button-s1">Contact us</a>
+        <div class="bt s3">
+          <a href="./pages/contact.html">Contact us</a
+          ><i class="fa-solid fa-arrow-right"></i>
+        </div>
       </div>
     </section>
     <footer>
@@ -160,12 +207,20 @@
           <a href="#"><i class="fa-brands fa-facebook"></i></a>
           <a href="#"><i class="fa-brands fa-instagram"></i></a>
         </div>
+        <div class="working-hours">
+          <span>Phone Us</span>
+          <p>Loic Conzatti</p>
+          <p>0437 803 966</p>
+        </div>
         <div class="logo">
           <img src="./assets/img/logo.png" alt="logo-cra" />
         </div>
       </div>
     </footer>
-
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0/dist/shoelace.js"
+    ></script>
     <script src="./assets/scripts/index.js"></script>
   </body>
 </html>

@@ -31,12 +31,13 @@
     }
   }
 }
-// #bg3 {
-//     background: url(./../img/painting-01.jpeg) center/cover fixed;
-//     height: 400px;
-// }
+#bg3 {
+  background: url(./../img/painting-01.jpeg) center/cover fixed;
+  height: 400px;
+}
 
 .team {
+  padding: 0 0 100px;
   .section-container {
     .left {
       padding: 25px;
@@ -44,8 +45,14 @@
       width: 50%;
       .container {
         .team-member {
+          margin: 15px 0;
           width: 100%;
           height: 150px;
+          border-radius: 2px;
+          box-shadow: 10px 10px 14px 0px rgba(0, 0, 0, 0.74);
+          &:hover {
+            transform: scale(1.02);
+          }
           .profile-pic {
             align-items: center;
             height: 100%;
@@ -67,6 +74,10 @@
       @include center-unique-child;
       width: 50%;
       .container {
+        h3 {
+          padding: 0 0 50px;
+          position: relative;
+        }
         .team-desc {
           display: none;
           width: 100%;
@@ -74,31 +85,92 @@
           //   display: block;
           gap: 25px;
           align-items: center;
+          padding: 0 5px;
           h5 {
             font-size: 1.4rem;
-            color: $color3;
+            color: $color3-l;
             text-align: left;
             font-weight: 300;
+            padding: 0 0 20px;
+            position: relative;
+            &::after {
+              content: "";
+              position: absolute;
+              height: 2px;
+              width: 60%;
+              background: $color3-l;
+              bottom: 15px;
+              left: 0;
+              transform: scaleX(0);
+              animation: afterTitle 1.6s ease-in-out forwards;
+            }
           }
           p {
             text-align: justify;
             max-width: 70%;
+            font-size: 1rem;
             strong {
-              color: $color3;
+              color: $color3-l;
               font-weight: 400;
             }
+            transform: scaleY(0);
+            animation: teamAnim 1.3s ease-in-out forwards;
           }
         }
         #none {
           @include center-unique-child;
+        }
+        #none,
+        #Loic,
+        #Amaury,
+        #Technicians {
+          transform: scaleX(0);
+          animation: menuAnim 1s ease-in-out forwards;
+        }
+        @keyframes teamAnim {
+          100% {
+            transform: scaleX(1);
+          }
+        }
+        @keyframes teamTitle {
+          100% {
+            transform: scaleY(1);
+          }
+        }
+        @keyframes afterTitle {
+          100% {
+            transform: scaleX(1);
+          }
         }
       }
     }
   }
 }
 
+#bg4 {
+  background: url(./../img/caulking-01.jpeg) center/cover fixed;
+  height: 400px;
+  z-index: -1;
+}
+
 .values {
+  overflow: hidden;
+  background: $color9;
+  position: relative;
+  #bg-values {
+    background: url(./../img/background-02.jpg) center/cover fixed;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    // filter: grayscale(80%);
+    opacity: 0.1;
+    position: absolute;
+    bottom: 0;
+  }
+
   .section-container {
+    margin: 100px;
+    z-index: 3;
     display: block;
     .value {
       display: flex;
@@ -108,11 +180,42 @@
       .right2 {
         @include center-unique-child;
         width: 30%;
+        h4 {
+          color: $color3-l;
+          text-transform: uppercase;
+          padding: 50px;
+          font-size: 2.5rem;
+          font-weight: 600;
+          letter-spacing: 2px;
+        }
+        #rat-07 {
+          background: url(./../img/rat-bw-07.png) center/cover;
+          height: 300px;
+
+          width: 250px;
+        }
+        #rat-06 {
+          background: url(./../img/rat-bw-04.png) center/cover;
+          height: 300px;
+          width: 250px;
+        }
       }
       .right,
       .left2 {
         @include center-unique-child;
         width: 50%;
+        .container {
+          position: relative;
+          &::after {
+            position: absolute;
+            content: "";
+            background: $color3-l;
+            height: 92%;
+            width: 1px;
+            top: 20px;
+            left: 12%;
+          }
+        }
       }
       .value-desc {
         display: flex;
@@ -121,10 +224,11 @@
         i {
           width: 10%;
           font-size: 2rem;
-          color: $color3;
+          color: $color3-l;
         }
         p {
           width: 80%;
+          text-align: left;
         }
       }
     }

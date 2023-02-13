@@ -29,6 +29,12 @@
       referrerpolicy="no-referrer"
     />
 
+    <!-- Shoelace -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0/dist/themes/light.css"
+    />
+
     <!-- Styles perso -->
     <link rel="stylesheet" href="./../assets/styles/index.css" />
 
@@ -43,18 +49,18 @@
           </div>
           <div class="menu">
             <ul>
-              <li><a href="./../index.html" id="home">Home</a></li>
-              <li><a href="#" id="about">About</a></li>
+              <li><a href="./../index.html">Home</a></li>
+              <li id="oui"><a href="#">About</a></li>
               <li>
-                <a href="./services.html" id="services">Services</a>
+                <a href="./services.html" id>Services</a>
               </li>
-              <li><a href="./contact.html" id="contact">Contact</a></li>
+              <li><a href="./contact.html" id>Contact</a></li>
             </ul>
           </div>
           <div class="burger-bun">
             <i class="fa-solid fa-bars"></i>
           </div>
-          <div class="socials">
+          <div class="socials" id="soc-header">
             <a href="#"><i class="fa-brands fa-linkedin"></i></a>
             <a href="#"><i class="fa-brands fa-facebook"></i></a>
             <a href="#"><i class="fa-brands fa-instagram"></i></a>
@@ -72,9 +78,8 @@
           At Conzatti Rope Access, we bring over 10 years of experience in rope
           access services to the table. From the French Alps to the summit of
           Australia, we have a proven track record of providing top-quality
-          services. At Conzatti, we believe that quality always comes first. We
-          are proud to be a company that is changing the rope access industry
-          for the better.
+          services. We believe that quality always comes first. We are proud to
+          be a company that is changing the rope access industry for the better.
         </p>
       </div>
     </section>
@@ -154,12 +159,14 @@
     </section>
     <div class="background" id="bg4"></div>
     <section class="values">
+      <div class="bg" id="bg-values"></div>
       <div class="section-container">
         <h3>Our values, Environmental & Safety focus</h3>
         <div class="value">
           <div class="left">
             <div class="container">
-              <h4>Environmental focus</h4>
+              <h4>Environment focus</h4>
+              <div class="img" id="rat-07"></div>
             </div>
           </div>
           <div class="right">
@@ -226,6 +233,7 @@
           <div class="right2">
             <div class="container">
               <h4>Safety</h4>
+              <div class="img" id="rat-06"></div>
             </div>
           </div>
         </div>
@@ -244,11 +252,21 @@
           <a href="#"><i class="fa-brands fa-facebook"></i></a>
           <a href="#"><i class="fa-brands fa-instagram"></i></a>
         </div>
+        <div class="working-hours">
+          <span>Phone Us</span>
+          <p>Loic Conzatti</p>
+          <p>0437 803 966</p>
+        </div>
         <div class="logo">
           <img src="./../assets/img/logo.png" alt="logo-cra" />
         </div>
       </div>
     </footer>
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0/dist/shoelace.js"
+    ></script>
+    <script src="./../assets/scripts/index.js"></script>
     <script src="./../assets/scripts/about.js"></script>
   </body>
 </html>

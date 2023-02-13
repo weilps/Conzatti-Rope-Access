@@ -16,16 +16,37 @@ loicT.addEventListener("mouseover", function () {
   techniciansD.style.display = "none";
 });
 
-amauryT.addEventListener("mouseout", function () {
+loicT.addEventListener("mouseout", function () {
+  noneD.style.display = "flex";
+  loicD.style.display = "none";
+  amauryD.style.display = "none";
+  techniciansD.style.display = "none";
+});
+
+amauryT.addEventListener("mouseover", function () {
   noneD.style.display = "none";
   loicD.style.display = "none";
   amauryD.style.display = "block";
   techniciansD.style.display = "none";
 });
 
-techniciansT.addEventListener("mouseout", function () {
+amauryT.addEventListener("mouseout", function () {
+  noneD.style.display = "flex";
+  loicD.style.display = "none";
+  amauryD.style.display = "none";
+  techniciansD.style.display = "none";
+});
+
+techniciansT.addEventListener("mouseover", function () {
   noneD.style.display = "none";
   loicD.style.display = "none";
   amauryD.style.display = "none";
   techniciansD.style.display = "block";
+});
+
+techniciansT.addEventListener("mouseout", function () {
+  noneD.style.display = "flex";
+  loicD.style.display = "none";
+  amauryD.style.display = "none";
+  techniciansD.style.display = "none";
 });
