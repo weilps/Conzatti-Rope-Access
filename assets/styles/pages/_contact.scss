@@ -20,6 +20,12 @@
       color: $color1;
       padding: 100px;
       margin: 0 auto;
+      @media screen and (max-width: 925px) {
+        padding: 100px 50px;
+      }
+      @media screen and (max-width: 450px) {
+        padding: 100px 0;
+      }
     }
     form {
       margin: 0 auto;

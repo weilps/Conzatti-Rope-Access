@@ -17,6 +17,7 @@ header {
       align-items: center;
       width: 100%;
       height: 100%;
+      position: relative;
       .logo {
         height: 100%;
         img {
@@ -50,7 +51,7 @@ header {
                 transform: scaleX(0);
                 animation: menuAnim 0.4s ease-in-out forwards;
                 @media screen and (max-width: 925px) {
-                  width: 50%;
+                  width: 45%;
                 }
               }
             }
@@ -83,7 +84,7 @@ header {
               width: 100%;
               background: $color2;
               @media screen and (max-width: 925px) {
-                width: 50%;
+                width: 45%;
               }
             }
           }
@@ -94,13 +95,15 @@ header {
           }
         }
         @media screen and (max-width: 925px) {
-          position: fixed;
+          position: absolute;
           top: 100px;
           right: -100%;
           width: 200px;
           height: 300px;
-          background-color: white;
+          background-color: whitesmoke;
           transition: right 0.4s ease-in-out;
+          border-radius: 15px;
+          z-index: 100;
         }
       }
       .menu.open {
@@ -125,14 +128,16 @@ header {
         display: flex;
         justify-content: space-between;
         @media screen and (max-width: 925px) {
-          position: fixed;
+          position: absolute;
           top: 350px;
           right: -100%;
           width: 200px;
           height: 25px;
-          background-color: white;
+          background-color: whitesmoke;
           transition: right 0.4s ease-in-out;
           padding: 25px;
+          border-radius: 15px;
+          z-index: 100;
         }
       }
       .socials.open {
@@ -146,6 +151,10 @@ header {
     justify-content: center;
     h2 {
       padding: 5vh 8vw 0;
+      @media screen and (max-width: 550px) {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(2px);
+      }
     }
     a {
       display: block;

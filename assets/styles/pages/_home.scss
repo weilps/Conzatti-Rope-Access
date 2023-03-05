@@ -49,6 +49,9 @@
         padding: 0 100px;
         color: $color2;
       }
+      @media screen and (max-width: 925px) {
+        padding: 0 0 0 100px;
+      }
     }
     p {
       padding: 50px 0 50px 50px;
@@ -106,6 +109,9 @@
     // z-index: -2;
     p {
       padding: 50px 0;
+      @media screen and (max-width: 600px) {
+        text-align: justify;
+      }
     }
     .button-s1 {
       margin: 50px 0 25px;
@@ -121,6 +127,9 @@
       top: 30%;
       left: -20%;
       //   z-index: -1;
+      @media screen and (max-width: 600px) {
+        display: none;
+      }
     }
     .right {
       width: 70%;
@@ -159,8 +168,18 @@
                 animation: animRoll 0.4s ease-in forwards;
               }
             }
+            @media screen and (max-width: 600px) {
+              font-size: 1rem;
+            }
+          }
+          @media screen and (max-width: 600px) {
+            gap: 25px;
           }
         }
+      }
+      @media screen and (max-width: 600px) {
+        width: 100%;
+        margin: 0 0 75px;
       }
     }
   }
@@ -173,6 +192,9 @@
   @include center-unique-child;
   padding: 100px;
   z-index: 3;
+  @media screen and (max-width: 920px) {
+    padding: 100px 50px;
+  }
 
   .section-container {
     background: rgba(255, 255, 255, 0.2);
@@ -193,6 +215,9 @@
       margin: 0 auto 50px;
       width: 150px;
       // color: $color2;
+    }
+    @media screen and (max-width: 920px) {
+      margin: 0 0 100px 0;
     }
   }
 }

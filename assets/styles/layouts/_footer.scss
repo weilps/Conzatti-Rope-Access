@@ -20,6 +20,10 @@ footer {
       p {
         font-size: 0.8rem;
       }
+      @media screen and (max-width: 450px) {
+        padding: 10px 0;
+        margin: 0 auto;
+      }
     }
     .socials {
       display: flex;
@@ -32,12 +36,24 @@ footer {
     .logo {
       height: 100%;
       width: 300px;
+      @media screen and (max-width: 450px) {
+        height: 150px;
+        margin: 15px auto;
+      }
       img {
         height: 100%;
-      }
-      @media screen and (max-width: 420px) {
-        display: none;
+        @media screen and (max-width: 450px) {
+          width: 150px;
+          height: 150px;
+        }
       }
     }
+    @media screen and (max-width: 450px) {
+      display: block;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    height: 400px;
+    padding: 20px;
   }
 }
